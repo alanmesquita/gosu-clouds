@@ -1,0 +1,17 @@
+/.bundle/
+/pkg/
+/tmp/
+/keys/
+*.bundle
+.vimrc
+prost_paginate
+/config/config.yml
+/config/video_dictionary.yml
+/config/akamai.yml
+/config/aws.yml
+/config/sidekiq.yml
+/vendor/
+vendor_spec/
+vendor/
+prost_pagination
+/coverage/
