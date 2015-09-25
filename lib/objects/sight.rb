@@ -20,7 +20,7 @@ class Sight
   def up(id)
     if id == Gosu::MsLeft
       @current_image = @cursor[0]
-      @fire.play
+      @fire.play(0.5)
     end
   end
 
