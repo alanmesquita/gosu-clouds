@@ -59,12 +59,8 @@ class Bird
           end
         end
       end
-      #@image = Gosu::Image::load_tiles("./media/explosion.png", 100, 100, :tileable => false)
-      #@current_tile = 0
-      #@animate_speed = 1
-      #@explosion.play
-      @miss.play if hit == 0
 
+      @miss.play if hit == 0
     end
   end
 
@@ -95,7 +91,7 @@ class Bird
       image: @image,
       x:     x,
       y:     y,
-      speed: rand(0.1..0.9),
+      speed: rand(0.5..0.9),
       state: 1, # 1 == 'lived' 0 == 'dead'
       width: x+27,
       height: y+28
