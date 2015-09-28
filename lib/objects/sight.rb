@@ -25,6 +25,6 @@ class Sight
   end
 
   def draw
-    @current_image.draw(@window.mouse_x-19, @window.mouse_y-19, 0, 0.5, 0.5)
+    @current_image.draw(@window.mouse_x, @window.mouse_y, 0, 0.5, 0.5)
   end
 end

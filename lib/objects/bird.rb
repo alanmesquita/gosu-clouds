@@ -50,11 +50,13 @@ class Bird
     hit = 0
     if id == Gosu::MsLeft
        @birds.each do |item|
-        if (item[:x]..item[:x]+27) === @window.mouse_x-19 && (item[:y]..item[:y]+28) === @window.mouse_y
-          item[:state] = 0
-          item[:frame] = 1
-          item[:image] = @image_explosion[0]
-          hit = 1
+        if item[:state] == 1
+          if (item[:x]..item[:x]+27) === @window.mouse_x && (item[:y]..item[:y]+28) === @window.mouse_y
+            item[:state] = 0
+            item[:frame] = 1
+            item[:image] = @image_explosion[0]
+            hit = 1
+          end
         end
       end
       #@image = Gosu::Image::load_tiles("./media/explosion.png", 100, 100, :tileable => false)
