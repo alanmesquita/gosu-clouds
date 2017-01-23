@@ -1,0 +1,5 @@
+gosu:
+  container_name: gosu
+  build: .
+  volumes:
+    - .:/gosu
